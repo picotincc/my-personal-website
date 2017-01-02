@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MapBox - A simple web map application.</title>
+    <link href="https://maybeshuo.github.io/apps/map-box/vendor/map.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://maybeshuo.github.io/apps/map-box/vendor/leaflet/leaflet.css" charset="utf-8">
+    <link rel="stylesheet" href="https://maybeshuo.github.io/apps/map-box/assets/mb/resource/index.css" charset="utf-8">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1469801099_0902343.css" charset="utf-8">
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=f0d37238752410c3956915dfa3f0791c"></script>
+    <script src="https://maybeshuo.github.io/apps/map-box/assets/vendor/index.js" charset="utf-8"></script>
+    <script src="https://maybeshuo.github.io/apps/map-box/vendor/open-ui5/resources/sap-ui-core.js" charset="utf-8"
+        data-sap-ui-resourceroots='{ "sap.a": "./assets/sap/a", "mb": "./assets/mb" }'></script>
+</head>
+<body>
+<script>
+    sap.ui.define([ "mb/index" ], function() {
+        var applicatioonController = new mb.app.ApplicationController({
+            viewOptions: {
+                id: "mb-app"
+            }
+        });
+        applicatioonController.getView().placeAt(document.body);
+
+        applicatioonController.run();
+    });
+</script>
+</body>
+</html>
