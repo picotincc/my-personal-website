@@ -26,7 +26,8 @@ module.exports = {
 
         alias: {
             base: path.resolve(__dirname, 'src/base/'),
-            home: path.resolve(__dirname, 'src/home/')
+            mobile: path.resolve(__dirname, 'src/mobile/'),
+            pc: path.resolve(__dirname, 'src/pc/')
         }
     },
 
