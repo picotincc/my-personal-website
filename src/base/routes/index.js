@@ -8,7 +8,7 @@ const pc = (location, callback) => {
 	}, 'pc');
 };
 
-const course = (location, callback) => {
+const mobile = (location, callback) => {
 	require.ensure([], require => {
 		callback(null, require('mobile/containers/App.js').default);
 	}, 'mobile');
@@ -20,9 +20,9 @@ const course = (location, callback) => {
 const routes = (
     <div>
 		<Route path='/' component={App}>
-			      <IndexRoute getComponent={pc} />
-            <Route path='home' getComponent={home} />
-						<Route path='course' getComponent={course} />
+			<IndexRoute getComponent={pc} />
+            <Route path='pc' getComponent={pc} />
+			<Route path='mobile' getComponent={mobile} />
 		</Route>
     </div>
 );
