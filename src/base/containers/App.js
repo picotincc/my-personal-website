@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import "base/resource/index.less";
+
 
 export default class App extends Component {
 
@@ -28,7 +30,7 @@ export default class App extends Component {
     {
         return (
             <div className="cs-root-app">
-
+                {this.props.children}
             </div>
         );
     }

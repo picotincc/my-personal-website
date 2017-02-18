@@ -31,7 +31,7 @@ export default class App extends Component {
 
     redirect()
     {
-        if (!FormatUtil.isPc())
+        if (!FormatUtil.isPC())
         {
             browserHistory.push("/mobile");
         }

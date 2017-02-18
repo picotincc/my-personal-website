@@ -10,7 +10,7 @@ module.exports = {
 
     entry: {
         vendor: [ "babel-polyfill", "whatwg-fetch"],
-        cp: [ "./base/index.js" ]
+        cs: [ "./base/index.js" ]
     },
 
     output: {
