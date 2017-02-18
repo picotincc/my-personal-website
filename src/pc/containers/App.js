@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
+import "pc/resource/index.less";
+
 import FormatUtil from 'base/util/FormatUtil';
+import Header from 'pc/components/Header';
 
 
 export default class App extends Component {
@@ -41,7 +44,14 @@ export default class App extends Component {
     {
         return (
             <div className="cs-pc-app">
-                PC端
+                <header><Header /></header>
+                <div className="my-info">
+
+                </div>
+                <ul className="projects-container">
+
+                </ul>
+                <footer></footer>
             </div>
         );
     }
