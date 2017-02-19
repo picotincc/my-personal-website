@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
+import { CircularProgress } from 'material-ui';
 
 import "pc/resource/index.less";
 
@@ -46,7 +47,8 @@ export default class App extends Component {
             <div className="cs-pc-app">
                 <header><Header /></header>
                 <div className="my-info">
-
+                    <span className="notice">正在建设中</span>
+                    <CircularProgress size={60} thickness={7} />
                 </div>
                 <ul className="projects-container">
 
