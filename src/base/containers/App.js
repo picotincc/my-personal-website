@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 import "base/resource/index.less";
 
@@ -29,9 +31,11 @@ export default class App extends Component {
     render()
     {
         return (
-            <div className="cs-root-app">
-                {this.props.children}
-            </div>
+            <MuiThemeProvider>
+                <div className="cs-root-app">
+                    {this.props.children}
+                </div>
+            </MuiThemeProvider>
         );
     }
 }

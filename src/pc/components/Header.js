@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FlatButton } from 'material-ui';
 
 export default class Header extends Component {
 
@@ -27,7 +28,8 @@ export default class Header extends Component {
     {
         return (
             <div className="cs-pc-header">
-                header
+                <span className="master">陈&nbsp;&nbsp;硕</span>
+                <a className="resume" href="/resume" target="_blank" >个人简历</a>
             </div>
         );
     }
